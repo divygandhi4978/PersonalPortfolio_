@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+li {
+    padding: 7px 20px 7px 0;
+    list-style: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+ul {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    left: 0;
+    top: 0;
+    background-color: black;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover {
+    color: #acb3ea;
+    font-weight: 500;
+    transition: all .1s ease-in-out;
+}
+
+nav h3 {
+    color: #778DA9;
+        align-items: center;
+}
+
+.divider {
+    height: 5px;
+    width: 100%;
+    background-color: #0e377d;
+}
+
+.init {
+    margin-left: 12%;
+    margin-top: 70px;
+    font-size: 30px;
+    color: #E0E1DD;
+}
+
+.intro {
+    margin-left: 12%;
+    margin-top: 70px;
+    font-size: 50px;
+}
+
+.homepage {
+    display: flex;
+    background-color: black;
+    padding-bottom: 50px;
+}
+
+#devlog {
+    margin-top: 80px;
+    margin-right: 120px;
+}
+
+#hhh {
+    width: 60%;
+}
+
+#purple {
+    color: #778DA9;
+    font-weight: 600;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    padding-left: 0;
+}
+
+.odet{
+    margin-top: 50px;
+    margin-left: 12%;
+    gap: 5px;
+    font-size: 22px;
+}
+
+.links ul li a img{
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 8px 4px 10px #778DA9;
+}
+
+.links{
+    margin-left: 12%;
+    margin-top: 30px;
+}
+
+.AboutMe{
+    background-color: #07182a;
+    padding-bottom: 60px;
+}
+
+#maina{
+    padding-top: 15px;
+    text-align: center;
+    display: flex;
+}
+
+
+#heading{
+padding-top: 15px;
+text-align: center;
+font-size: 50px;
+font-weight: 600;
+text-shadow: 2px 5px 5px blue;
+}
+
+#selfi{
+    margin-left: 50%;
+    margin-top: 30px;
+    height:450px;
+    box-shadow: 19px 20px 0px grey;
+}
+
+.abcon{
+    margin-left: 320px;
+    margin-top: 90px;
+
+}
+
+.name{
+    text-align: left;
+    font-size: 40px;
+    color: #38a3a5;
+    font-weight: 600;
+}
+
+.h2{
+    text-align: left;
+}
+
+h2{
+    font-size: 35px;
+}
+
+p{
+    font-size: 25px;
+}
+
+.footer{
+    background-color: #778DA9;
+    display: flex;
+    color: #001d3d;
+    font-weight: 530;
+}
+
+.left{
+    margin-left: 8%;
+    margin-top: 30px;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.right{
+    margin-left: 8%;
+    margin-top: 25px;
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.rd{
+    display: flex;
+    align-items: center;
+}
