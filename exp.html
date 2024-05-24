@@ -1,76 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience</title>
     <link rel="icon" href="Pictures/icon.png">
+    <link rel="stylesheet" href="main.css">
     <style>
         * {
-    margin: 0;
-    padding: 0;
-}body {
-   background-color: #07182a;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+            margin: 0;
+            padding: 0;
+        }
 
-li {
-    padding: 7px 20px 7px 0;
-    list-style: none;
-    cursor: pointer;
-    font-size: 18px;
-}
+        body {
+            background-color: #07182a;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-ul {
-    display: flex;
-}
+        li {
+            padding: 7px 20px 7px 0;
+            list-style: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: sticky;
-    left: 0;
-    top: 0;
-    background-color: black;
-}
+        ul {
+            display: flex;
+        }
 
-li a {
-    text-decoration: none;
-    color: white;
-}
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: sticky;
+            left: 0;
+            top: 0;
+            background-color: black;
+        }
 
-li a:hover {
-    color: #acb3ea;
-    font-weight: 500;
-    transition: all .1s ease-in-out;
-}
+        li a {
+            text-decoration: none;
+            color: white;
+        }
 
-nav h3 {
-    color: #778DA9;
-        align-items: center;
-}
+        li a:hover {
+            color: #acb3ea;
+            font-weight: 500;
+            transition: all .1s ease-in-out;
+        }
 
-div{
-    font-size: 30px;
-    margin: 30px;
-}
+        nav h3 {
+            color: #778DA9;
+            align-items: center;
+        }
+
+        div {
+            font-size: 30px;
+            margin: 30px;
+        }
+
+        
     </style>
-    
+
 </head>
+
 <body>
-    <nav>
-        <h3>Divy Gandhi</h3>
+    <nav id="nav1">
+        <h3><a href="https://divygandhi4978.github.io/PersonalPortfolio_/">Divy Gandhi</a></h3>
+
+        <div id="svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#c6c2c2"
+                fill="none">
+                <path d="M4 5L20 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M4 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M4 19L20 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </div>
+
         <ul>
-            <li><a href="index.html" >Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="education.html">Education</a></li>
-            <li><a href="project.html" >Projects</a></li>
-            <li><a href="exp.html" style="color: #acb3ea;">Experience</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="exp.html"  style="color: #acb3ea;">Experience</a></li>
             <li><a href="assets/Resume.pdf" target="_main">Resume</a></li>
-            <li ><a href="index.html#feet">Contact Me</a></li>
+            <li><a href="index.html#feet">Contact Me</a></li>
         </ul>
+
     </nav>
+
+    <div class="divider"></div>
+
+    <div class="tog dis">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="exp.html"  style="color: #acb3ea;">Experience</a></li>
+            <li><a href="assets/Resume.pdf" target="_main">Resume</a></li>
+            <li><a href="index.html#feet">Contact Me</a></li>
+        </ul>
+    </div>
     <div>I don't have any experience yet.</div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
