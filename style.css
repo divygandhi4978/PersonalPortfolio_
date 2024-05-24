@@ -46,12 +46,6 @@ nav h3 {
         align-items: center;
 }
 
-.divider {
-    height: 5px;
-    width: 100%;
-    background-color: #0e377d;
-}
-
 .init {
     margin-left: 12%;
     margin-top: 70px;

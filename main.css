@@ -12,6 +12,13 @@ h3 a {
     color: #778DA9;
 }
 
+.divider {
+    height: 5px;
+    width: 100%;
+    background-color: #0e377d;
+}
+
+
 @media only screen and (max-width:500px) {
     #nav1 ul {
         display: none;

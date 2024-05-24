@@ -49,7 +49,7 @@ nav h3 {
     display: flex;
     border-radius: 15px;
     margin: 50px;
-    box-shadow: 7px 7px 20px #4c647e;
+    box-shadow: inset 0px 0px 20px #607e9f;
 }
 
 .im{
@@ -58,7 +58,7 @@ nav h3 {
 .im img{
    border-radius: 10px;
    align-items: center;
-   height: 220px;
+   width: 360px;
    margin: 25px;
 }
 
@@ -76,10 +76,37 @@ nav h3 {
 
 .certi a{
     text-decoration: none;
-    color:white;
+    color:#B398D2;
+    font-weight: 600;
 }
 
 .certi a:hover{
-    color: #8c93d5;
+    color: #8c9ed5;
 }
 
+@media only screen and (max-width:400px)
+{
+    .cont{
+        display: flow-root;
+        width: 80vw;
+        margin-left: 10vw;
+        padding-bottom: 30px;
+    }
+
+    .im img{
+        width: 60vw;
+        margin: 10vw;
+    }
+
+    .field{
+        font-size: 25px;
+        margin: 0 0 0 10vw;
+        color: #98c4f9;
+        font-weight: 700;
+    }
+
+    .details,.certi{
+        margin: 25px 0 0 10vw;
+        font-size: 20px;
+    }
+}
