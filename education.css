@@ -46,10 +46,14 @@ nav h3 {
 
 .cont{
     background-color: #1b2c40;
-    display: flex;
     border-radius: 15px;
-    margin: 50px;
     box-shadow: inset 0px 0px 20px #3c6a9c;
+    display: flow-root;
+    margin: 20px;
+}
+
+.cont:hover{
+    box-shadow: inset 0px 0px 20px #092d53;
 }
 
 .im{
@@ -62,16 +66,21 @@ nav h3 {
    margin: 25px;
 }
 
+.main{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+
 .field{
-    font-size: 40px;
-    margin: 30px;
+    font-size: 25px;
+    margin: 0 30px 0 30px;
     color: #98c4f9;
     font-weight: 700;
 }
 
 .details,.certi{
     margin: 30px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .certi a{
@@ -86,6 +95,11 @@ nav h3 {
 
 @media only screen and (max-width:400px)
 {
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+        }
+
     .cont{
         display: flow-root;
         width: 80vw;
