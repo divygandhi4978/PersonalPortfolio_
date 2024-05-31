@@ -204,7 +204,7 @@ p {
 .left {
     margin-left: 8%;
     margin-top: 30px;
-    font-size: 30px;
+    font-size: 22px;
     margin-bottom: 30px;
 }
 
@@ -224,4 +224,101 @@ p {
 .rd a {
     text-decoration: none;
     color: #001d3d;
+}
+
+.cnt {
+    background-color: #364141;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    background-color: #d4d7f2;
+    margin: 5px 0px 25px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+}
+
+.cnt h1 {
+    text-shadow: 0px 2px 5px #939bd8;
+    text-align: center;
+}
+
+.hvr:hover {
+    border: 3px solid #2c5995;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.wrap-input-1 .input:focus {
+    outline: none;
+}
+
+.wrap-input-1 {
+    width: 250px;
+    margin: 5px;
+    position: relative;
+}
+
+.wrap-input-1 .input {
+    border: 0;
+    color: #07182a;
+    padding: 7px 0 7px 7px;
+    border-bottom: 1px solid #535151;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    background-color: transparent;
+}
+
+.wrap-input-1 .input~.focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color:
+        #1b1448;
+    transition: 0.4s;
+}
+
+.wrap-input-1 .input:focus~.focus-border {
+    width: 100%;
+    transition: 0.4s;
+}
+
+.btn-84 {
+    background-color: transparent;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: #061b35;
+    border-color: #2c5995;
+    box-shadow: 1px 1px 2px #001d3d;
+}
+
+@media screen and (max-width:400px) {
+    .cnt {
+        background-color: #3e4d4d;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact {
+        background-color: #d4d7f2;
+        margin: 5px 0px 25px 0vw;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 5px;
+        min-width: 270px;
+    }
 }
