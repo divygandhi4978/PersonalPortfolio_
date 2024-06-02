@@ -1,8 +1,10 @@
 * {
     margin: 0;
     padding: 0;
-}body {
-   background-color: black;
+}
+
+body {
+    background-color: black;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -41,10 +43,10 @@ li a:hover {
 
 nav h3 {
     color: #778DA9;
-        align-items: center;
+    align-items: center;
 }
 
-.cont{
+.cont {
     background-color: #1b2c40;
     border-radius: 15px;
     box-shadow: inset 0px 0px 20px #3c6a9c;
@@ -52,74 +54,79 @@ nav h3 {
     margin: 20px;
 }
 
-.cont:hover{
+.cont:hover {
     box-shadow: inset 0px 0px 20px #092d53;
 }
 
-.im{
+.im {
     display: flex;
 }
-.im img{
-   border-radius: 10px;
-   align-items: center;
-   width: 360px;
-   margin: 25px;
+
+.im img {
+    border-radius: 10px;
+    align-items: center;
+    width: 360px;
+    margin: 25px;
 }
 
-.main{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.field{
+.field {
     font-size: 25px;
     margin: 0 30px 0 30px;
     color: #98c4f9;
     font-weight: 700;
 }
 
-.details,.certi{
+.details,
+.certi {
     margin: 30px;
     font-size: 20px;
 }
 
-.certi a{
+.certi a {
     text-decoration: none;
-    color:#B398D2;
+    color: #B398D2;
     font-weight: 600;
 }
 
-.certi a:hover{
+.certi a:hover {
     color: #8c9ed5;
 }
 
-@media only screen and (max-width:400px)
-{
-    .main{
-        display: grid;
-        grid-template-columns: 1fr;
-        }
+@media only screen and (max-width:450px) {
+    .main {
+        display: block;
+        height: 800px;
+        border-radius: 15px;
+        overflow: auto;
+        scrollbar-width:none;
+    }
 
-    .cont{
+    .cont {
         display: flow-root;
         width: 80vw;
         margin-left: 10vw;
         padding-bottom: 30px;
     }
 
-    .im img{
+    .im img {
         width: 60vw;
         margin: 10vw;
     }
 
-    .field{
+    .field {
         font-size: 25px;
         margin: 0 0 0 10vw;
         color: #98c4f9;
         font-weight: 700;
     }
 
-    .details,.certi{
+    .details,
+    .certi {
         margin: 25px 0 0 10vw;
         font-size: 20px;
     }
