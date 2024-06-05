@@ -56,9 +56,80 @@
             align-items: center;
         }
 
-        div {
-            font-size: 30px;
-            margin: 30px;
+        .display {
+            display: none;
+            ;
+        }
+
+        .details {
+            font-size: 20px;
+            margin: 15px 35px 5px 35px;
+        }
+
+        .skills {
+            display: flex;
+            margin-top: 55px;
+            justify-content: center;
+        }
+
+        img {
+            height: 40px;
+        }
+
+        .item {
+            display: flex;
+            justify-content: center;
+            border-radius: 3px;
+            border: 1px solid gray;
+            width: 170px;
+            align-items: center;
+            padding: 5px;
+            margin: 10px;
+        }
+
+        .item:hover {
+            transform: translateY(10px);
+            transition-duration: .5s;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .Sname {
+            margin-left: 10px;
+        }
+
+        @media screen and (max-width:400px) {
+            .details {
+                font-size: 17px;
+            }
+
+            .display {
+                display: block;
+            }
+
+            .skills {
+                display: grid;
+                grid-template-columns: 1fr;
+                justify-items: center;
+            }
+
+            .item {
+                justify-content: center;
+                align-items: center;
+                justify-items: center;
+                align-content: center;
+            }
+
+
+            .item:hover{
+                transform: translateY(0px);
+                transform: translateX(10px);
+                transition-duration: .5s;
+            }
+
         }
     </style>
 </head>
@@ -93,21 +164,29 @@
     <div class="tog dis">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <hr>
             <li><a href="education.html">Education</a></li>
-            <hr>
             <li><a href="project.html" style="color: #081788">Projects</a></li>
-            <hr>
             <li><a href="exp.html">Experience</a></li>
-            <hr>
             <li><a href="assets/Resume.pdf" target="_main">Resume</a></li>
-            <hr>
             <li><a href="index.html#feet">Contact Me</a></li>
         </ul>
     </div>
-    <div>This is my First Project Website</div>
-    <!-- 2nd:https://divygandhi4978.github.io/UltraEdit-Page/ -->
 
+    <h1 class="display">Skills</h1>
+
+    <div class="details">I am passionate about web development and have dedicated significant time to mastering HTML and
+        CSS. Additionally, I have a strong foundation in programming languages such as C, C++, and Java. I love solving
+        data structures and algorithms (DSA) problems, which I find both challenging and rewarding. My current focus is
+        on expanding my knowledge in frontend development, where I strive to stay updated with the latest trends and
+        best practices.</div>
+
+    <div class="skills">
+        <div class="item"><img src="Pictures/java.png" alt="java"> <span class="Sname">Java</span></div>
+        <div class="item"><img src="Pictures/c.png" alt="C-Language"> <span class="Sname">C</span></div>
+        <div class="item"><img src="Pictures/html.webp" alt="HTML"> <span class="Sname">HTML</span></div>
+        <div class="item"><img src="Pictures/css.webp" alt="CSS"> <span class="Sname">CSS</span></div>
+        <div class="item"><img src="Pictures/js.webp" alt="java-Script"> <span class="Sname">JavaScript</span></div>
+    </div>
     <script src="script.js"></script>
 </body>
 

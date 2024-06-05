@@ -97,50 +97,49 @@ h3 a {
         margin: 0;
     }
 
-    .left,
-    .right {
-        font-size: 20px;
-    }
-
-    .left {
-        margin-top: 20px;
-        margin-left: 3%;
-    }
-
-    .right {
-        margin-left: 1%;
-        margin-top: -17px;
-    }
-
     .tog ul {
-        display: flow-root;
+        display: grid;
+        grid-template-columns: 1fr;
         font-size: 18px;
         padding: 5px;
         font-weight: 600;
+        margin-top: 25vh;
         color: beige;
+        grid-gap: 12px;
+        justify-items: center;
+    }
 
-        transition: all 0.5s ease-in-out;
+    .tog ul li{
+        border:2px solid #778DA7;
+        width: 150px;
+        border-radius: 5px;
     }
 
     .tog ul li a{
         text-align: center;
         color: black;
         padding-left: 25px;
-    }
-    .tog ul li a:hover {
-        color: #21285f;
-        background-color: #4c5a6a;
-        font-weight: 500;
+        transition: all 0.5s ease-in-out;
     }
 
     .tog {
         background-color: #f6efef;
         position: fixed;
         z-index: 1;
-        height: 250px;
-        margin: 10px 30px 10px 20px;
-        border-radius:7px;
-        width: 90vw;
-        transition: all 0.5s ease-in-out;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        margin: 40px 0px 0px 0px;
+        width: 60vw;
+        animation: togList .6s linear ;
+    }
+
+    @keyframes togList {
+        from{
+           opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
     }
 }
