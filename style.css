@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
+    color: hsl(189, 100%, 96%);
     background-color: black;
 }
 
@@ -47,14 +47,14 @@ nav h3 {
 }
 
 .init {
-    margin-left: 12%;
+    margin-left: 7%;
     margin-top: 70px;
     font-size: 30px;
     color: #E0E1DD;
 }
 
 .intro {
-    margin-left: 12%;
+    margin-left: 7%;
     margin-top: 70px;
     font-size: 50px;
 }
@@ -71,7 +71,7 @@ nav h3 {
 }
 
 #hhh {
-    width: 60%;
+    width: 80%;
 }
 
 #purple {
@@ -82,29 +82,38 @@ nav h3 {
 .location {
     display: flex;
     align-items: center;
-    padding: 5px;
+    padding: 7px;
     padding-left: 0;
 }
 
 .odet {
     margin-top: 50px;
-    margin-left: 12%;
-    gap: 5px;
-    font-size: 22px;
+    margin-left: 7%;
+    font-size: 20px;
+}
+
+.odetspa {
+    margin-left: 7px;
+    display: inline;
+}
+
+.odetspa a {
+    text-decoration: none;
+    color: white;
 }
 
 .links ul li a img {
     height: 70px;
     border-radius: 50%;
-    box-shadow: 8px 4px 10px #778DA9;
+    box-shadow: 0px 1px 10px #778DA9;
 }
 
 .links ul li a img:hover {
-    box-shadow: 8px 4px 10px #2c5995;
+    box-shadow: 3px 6px 10px #2c5995;
 }
 
 .links {
-    margin-left: 12%;
+    margin-left: 7%;
     margin-top: 30px;
 }
 
@@ -186,18 +195,30 @@ p {
 
 .ftco-section {
     background-size: cover;
-    background: #252525;
+    background-image: url(Pictures/hireme.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: .85;
+    height: 160px;
+}
+
+.container {
+    width: 100vw;
+    height: 160px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 160px;
 }
 
 .footer {
-    background-color: #778DA9;
+    background-color: black;
     display: flex;
-    color: #001d3d;
+    color: #dce8f5;
     font-weight: 530;
 }
 
@@ -223,11 +244,14 @@ p {
 
 .rd a {
     text-decoration: none;
-    color: #001d3d;
+    color: #dde8f4;
 }
 
 .cnt {
-    background-color: #364141;
+    background-color: #1b2628;
+
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -235,6 +259,7 @@ p {
 }
 
 .contact {
+    z-index: 1;
     background-color: #d4d7f2;
     margin: 5px 0px 25px 0;
     padding: 10px;
@@ -250,9 +275,8 @@ p {
 }
 
 .hvr:hover {
-    border: 3px solid #2c5995;
-    border-radius: 5px;
-    padding: 2px;
+    transform: translateX(10px);
+    transition: all 0.3s linear;
 }
 
 .wrap-input-1 .input:focus {
@@ -306,7 +330,7 @@ p {
 
 @media screen and (max-width:400px) {
     .cnt {
-        background-color: #3e4d4d;
+        background-color: #11112f;
         padding: 10px;
         display: flex;
         justify-content: center;
@@ -322,7 +346,7 @@ p {
         min-width: 270px;
     }
 
-    
+
     .left,
     .right {
         font-size: 17px;
@@ -330,11 +354,11 @@ p {
 
     .left {
         margin-top: 20px;
-        margin-left: 3%;
+        margin-left: 4%;
     }
 
     .right {
-        margin-left: 1%;
+        margin-left: -4%;
         margin-top: -24px;
     }
 }
