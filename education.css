@@ -47,9 +47,9 @@ nav h3 {
 }
 
 .cont {
-    background-color: #1b2c40;
+    background-color: #061526;
     border-radius: 15px;
-    box-shadow: inset 0px 0px 20px #3c6a9c;
+    box-shadow: inset 0px 0px 20px #466586;
     display: flow-root;
     margin: 20px;
 }
@@ -70,8 +70,11 @@ nav h3 {
 }
 
 .main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    overflow: scroll;
+    scrollbar-width: none;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
 }
 
 .field {
@@ -97,13 +100,17 @@ nav h3 {
     color: #8c9ed5;
 }
 
+.netaji img{
+    height: 35vh;
+}
+
+.scroll{
+    margin: 5px;
+    padding-left: 20px;
+}
 @media only screen and (max-width:450px) {
     .main {
-        display: block;
-        height: 800px;
-        border-radius: 15px;
-        overflow: auto;
-        scrollbar-width:none;
+       margin-top: 20px;
     }
 
     .cont {
@@ -116,6 +123,10 @@ nav h3 {
     .im img {
         width: 60vw;
         margin: 10vw;
+    }
+
+    .netaji img{
+        height: 24vh;
     }
 
     .field {
