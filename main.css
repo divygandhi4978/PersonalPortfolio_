@@ -97,6 +97,11 @@ h3 a {
         margin: 0;
     }
 
+    .form{
+        display: flex;
+        justify-content: center;
+    }
+
     .tog ul {
         display: grid;
         grid-template-columns: 1fr;
