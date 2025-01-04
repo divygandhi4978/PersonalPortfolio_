@@ -8,6 +8,23 @@
     <link rel="icon" href="Pictures/icon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="main.css">
+
+    <style>
+        .animate-pulse{
+            animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        @keyframes pulse {
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -55,7 +72,7 @@
             <div class="init">Hey, There Welcome to my Portfolio..!</div>
 
             <div class="intro">
-                <div>I am <span id="purple"> Divy Gandhi</span>...</div>
+                <div>I am <span id="purple " class="animate-pulse"> Divy Gandhi</span>...</div>
                 <div>I am into Software Engineering.</div>
             </div>
 
@@ -160,7 +177,8 @@
             <h1>Contact Me</h1>
             <div class="contact">
                 <div class="form">
-                    <a href="https://forms.gle/XtUZ4s5eZXPPm9Ry8" target="_main"><button class="btn-84">CLICK HERE</button></a>
+                    <a href="https://forms.gle/XtUZ4s5eZXPPm9Ry8" target="_main"><button class="btn-84">CLICK
+                            HERE</button></a>
                 </div>
             </div>
         </div>
